@@ -15,26 +15,26 @@ function toCommas(x) {
 exports.allMenu = (ucapanWaktu, pushname, mundur, upload, download, ownerName, botName, jam, tanggal, runtime, isCreator, isPremium, sender, limitCount, limit, gcount, glimit, balance, prefix) => {
     return`${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}
 
-Hitung Mundur HUT RI Ke-77
+Hitung Mundur Hari Kemerdekaan Republik Indonesia🇮🇩
 ${mundur}
 
-*STATISTICS*
- • Upload : ${upload}
- • Downloads : ${download}
+❏ *Penggunaan Internet*
+ ⌬ Total Terima : ${download}
+ ⌬ Total Terkirim : ${upload}
 
-*BOT INFO*
- • Creator : ${ownerName}
- • Bot Name : ${botName}
- • Time : ${jam}
- • Date : ${tanggal(new Date())}
- • Runtime : ${runtime(process.uptime())}
+❏ *I N F O B O T*
+ ⌬ Creator : ${ownerName}
+ ⌬ Bot Name : ${botName}
+ ⌬ Time : ${jam}
+ ⌬ Date : ${tanggal(new Date())}
+ ⌬ Running : ${runtime(process.uptime())}
 
-*USER INFO*
- • Name : ${pushname !== undefined ? pushname : '-'}
- • Status : ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
- • Limit : ${isCreator ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
- • Limit Game : ${isCreator ? '-' : cekGLimit(sender, gcount, glimit)}
- • Balance : ${toCommas(getBalance(sender, balance))}
+❏ *U S E R   I N F O*
+ ⌬ Name : ${pushname !== undefined ? pushname : '-'}
+ ⌬ Status : ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+ ⌬ Limit : ${isCreator ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+ ⌬ Limit Game : ${isCreator ? '-' : cekGLimit(sender, gcount, glimit)}
+ ⌬ Balance : ${toCommas(getBalance(sender, balance))}
 
 *MAIN MENU*${petik}
  • ${prefix}menu
